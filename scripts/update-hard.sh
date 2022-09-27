@@ -1,7 +1,7 @@
-rm -r arbitrage-price-bot-public
-rm -r arbitrage-bot-purchaser-public
-rm -r arbitrage-bot-error-public
-rm -r arbitrage-bot-supervisor-public
+sudo rm -r arbitrage-price-bot-public
+sudo rm -r arbitrage-bot-purchaser-public
+sudo rm -r arbitrage-bot-error-public
+sudo rm -r arbitrage-bot-supervisor-public
 git clone https://github.com/EthanHarsh/arbitrage-bot-purchaser-public.git
 git clone https://github.com/EthanHarsh/arbitrage-price-bot-public.git
 git clone https://github.com/EthanHarsh/arbitrage-bot-trade-supervisor-public.git
