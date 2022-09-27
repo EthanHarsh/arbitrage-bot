@@ -15,12 +15,15 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plu
 git clone https://github.com/EthanHarsh/arbitrage-bot-purchaser-public.git
 git clone https://github.com/EthanHarsh/arbitrage-price-bot-public.git
 git clone https://github.com/EthanHarsh/arbitrage-bot-trade-supervisor-public.git
+git clone https://github.com/EthanHarsh/arbitrage-bot-error-public.git
 cp env/example.env arbitrage-bot-purchaser-public/.env
 cp env/example.env arbitrage-bot-trade-supervisor-public/.env
 cp env/example.env arbitrage-price-bot-public/.env
 sudo docker build arbitrage-bot-purchaser-public/. -t arbitrage-bot-purchaser
 sudo docker build arbitrage-bot-trade-supervisor-public/. -t arbitrage-bot-trade-supervisor
 sudo docker build arbitrage-price-bot-public/. -t arbitrage-price-bot
+sudo docker build arbitrage-bot-error-public/. -t arbitrage-bot-error
 sudo docker run -d --restart unless-stopped --network=host --name=arbitrage-bot-purchaser arbitrage-bot-purchaser:latest
 sudo docker run -d --restart unless-stopped --network=host --name=arbitrage-bot-trade-supervisor arbitrage-bot-trade-supervisor:latest
 sudo docker run -d --restart unless-stopped --network=host --name=arbitrage-price-bot arbitrage-price-bot:latest
+sudo docker run -d --restart unless-stopped --network=host --name=arbitrage-bot-error-public arbitrage-bot-error-public:latest
