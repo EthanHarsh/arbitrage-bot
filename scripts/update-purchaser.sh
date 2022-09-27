@@ -1,5 +1,5 @@
 #!/bin/bash
-cd arbitrage-bot-purchaser
+cd arbitrage-bot-purchaser-public
 git pull
 sudo docker build . -t arbitrage-bot-purchaser
 sudo docker stop arbitrage-bot-purchaser && sudo docker rm arbitrage-bot-purchaser

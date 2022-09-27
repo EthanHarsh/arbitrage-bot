@@ -1,5 +1,5 @@
 #!/bin/bash
-cd arbitrage-price-bot
+cd arbitrage-price-bot-public
 git pull
 sudo docker build . -t arbitrage-price-bot
 sudo docker stop arbitrage-price-bot
