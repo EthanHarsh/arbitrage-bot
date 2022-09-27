@@ -1,3 +1,4 @@
+#!/bin/bash
 cd arbitrage-bot-purchaser
 git pull
 sudo docker build . -t arbitrage-bot-purchaser

@@ -1,4 +1,4 @@
+#!/bin/bash
 bash update_supervisor.sh
-bash update_arbitrage_bot_purchaser.sh
-bash update_swing_trader.sh
-bash update_fantom_arbitrage_bot.sh
+bash update_purchaser.sh
+bash update_price_bot.sh

@@ -1,3 +1,4 @@
+#!/bin/bash
 cd arbitrage-price-bot
 git pull
 sudo docker build . -t arbitrage-price-bot
