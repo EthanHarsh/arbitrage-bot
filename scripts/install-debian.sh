@@ -26,4 +26,4 @@ sudo docker build arbitrage-bot-error-public/. -t arbitrage-bot-error
 sudo docker run -d --restart unless-stopped --network=host --name=arbitrage-bot-purchaser arbitrage-bot-purchaser:latest
 sudo docker run -d --restart unless-stopped --network=host --name=arbitrage-bot-trade-supervisor arbitrage-bot-trade-supervisor:latest
 sudo docker run -d --restart unless-stopped --network=host --name=arbitrage-price-bot arbitrage-price-bot:latest
-sudo docker run -d --restart unless-stopped --network=host --name=arbitrage-bot-error arbitrage-bot-error-public:latest
+sudo docker run -d --restart unless-stopped --network=host --name=arbitrage-bot-error arbitrage-bot-error:latest
